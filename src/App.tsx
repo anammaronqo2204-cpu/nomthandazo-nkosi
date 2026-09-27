@@ -531,6 +531,35 @@ function App() {
           </div>
         </section>
 
+        <section className="section-space" id="live" aria-labelledby="live-title">
+          <div className="section-inner">
+            <div className="section-intro" data-reveal>
+              <div>
+                <p className="section-kicker">Live</p>
+                <h2 className="section-title" id="live-title">
+                  Straight from the source.
+                </h2>
+              </div>
+              <p className="section-intro__copy">
+                Pulled live from her official TikTok — always current, no screenshots needed.
+              </p>
+            </div>
+            <blockquote
+              className="tiktok-embed"
+              cite="https://www.tiktok.com/@nomie_nkosi"
+              data-unique-id="nomie_nkosi"
+              data-embed-type="creator"
+              style={{ maxWidth: 420, minWidth: 288, margin: "0 auto" }}
+            >
+              <section>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.tiktok.com/@nomie_nkosi">
+                  @nomie_nkosi on TikTok
+                </a>
+              </section>
+            </blockquote>
+          </div>
+        </section>
+
         <section className="profile section-space" id="profile" aria-labelledby="profile-title">
           <div className="section-inner profile-grid">
             <div className="profile__lead" data-reveal>
