@@ -1,5 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 import { downloadPartnershipOverview } from "./mediaKitPdf";
+import heroPortrait from "./assets/hero-portrait.jpeg";
+import fullbodyPortrait from "./assets/fullbody-portrait.jpeg";
+import graduation from "./assets/graduation.jpeg";
+import notSorryPoster from "./assets/not-sorry-poster.jpeg";
 
 const emailAddress = "nomiemotso@gmail.com";
 const bookingLink = `mailto:${emailAddress}?subject=Partnership%20enquiry%20-%20Nomthandazo%20Nkosi`;
@@ -386,8 +390,8 @@ function App() {
         <section className="hero" id="top" aria-labelledby="hero-title">
           <img
             className="hero__image"
-            src="https://images.pexels.com/photos/27152278/pexels-photo-27152278.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1500&w=2400"
-            alt="Editorial portrait placeholder for Nomthandazo Nkosi's approved portrait."
+            src={heroPortrait}
+            alt="Nomthandazo Nkosi, founder of Neema Tradings and host of the Not Sorry podcast"
             fetchPriority="high"
           />
           <div className="hero__shade" aria-hidden="true" />
@@ -438,6 +442,11 @@ function App() {
               <p className="section-intro__copy">
                 Her public profile is grounded in education, business ownership and a seat at the table earned through preparation.
               </p>
+              <img
+                src={graduation}
+                alt="Nomthandazo Nkosi at her graduation"
+                style={{ marginTop: "1.5rem", width: "100%", maxWidth: 280, borderRadius: 4 }}
+              />
             </div>
 
             <div className="credential-list">
@@ -448,8 +457,8 @@ function App() {
               </article>
               <article className="credential-row" data-reveal>
                 <span className="credential-row__number">02</span>
-                <h3>Business owner</h3>
-                <p>Runs tender and RFQ compliance consulting services for businesses preparing submissions.</p>
+                <h3>Founder, Neema Tradings</h3>
+                <p>Bid specialist, project manager and entrepreneur running tender &amp; RFQ compliance consulting.</p>
               </article>
               <article className="credential-row" data-reveal>
                 <span className="credential-row__number">03</span>
@@ -488,18 +497,11 @@ function App() {
                   <ArrowIcon diagonal />
                 </div>
                 <div className="reach-platform__number">
-                  <strong>
-                    <span data-count="492" data-suffix="K">
-                      0K
-                    </span>
-                  </strong>
+                  <strong>492K</strong>
                   <span>followers</span>
                 </div>
                 <p className="reach-platform__secondary">
-                  <span data-count="17.2" data-suffix="M" data-decimals="1">
-                    0M
-                  </span>{" "}
-                  <span className="reach-platform__unit">likes</span>
+                  17.2M <span className="reach-platform__unit">likes</span>
                 </p>
                 <span className="reach-platform__handle">@nomie_nkosi</span>
               </a>
@@ -517,11 +519,7 @@ function App() {
                   <ArrowIcon diagonal />
                 </div>
                 <div className="reach-platform__number">
-                  <strong>
-                    <span data-count="26.5" data-suffix="K" data-decimals="1">
-                      0K
-                    </span>
-                  </strong>
+                  <strong>26.5K</strong>
                   <span>followers</span>
                 </div>
                 <p className="reach-platform__secondary reach-platform__secondary--quiet">A close-knit community</p>
@@ -601,6 +599,11 @@ function App() {
               <p className="profile__pullquote">She leads with credentials, preparation and a point of view.</p>
             </div>
             <div className="profile__copy" data-reveal>
+              <img
+                src={fullbodyPortrait}
+                alt="Nomthandazo Nkosi, full-length portrait"
+                style={{ float: "right", width: "100%", maxWidth: 220, marginLeft: "1.5rem", marginBottom: "1rem", borderRadius: 4 }}
+              />
               <p>
                 Based in Johannesburg, Nomthandazo Nkosi works across business, media and political spaces. In rooms where women remain underrepresented, she has earned her position through education, enterprise and the quality of her work, not visibility alone.
               </p>
@@ -620,6 +623,11 @@ function App() {
               <p className="section-kicker section-kicker--light">04 / The show</p>
               <h2 id="podcast-title">Not Sorry<span>.</span></h2>
               <span className="podcast__hairline" aria-hidden="true" />
+              <img
+                src={notSorryPoster}
+                alt="Official Not Sorry podcast promotional artwork featuring Nomthandazo Nkosi"
+                style={{ marginTop: "2rem", width: "100%", maxWidth: 320, borderRadius: 4 }}
+              />
             </div>
             <div className="podcast__details" data-reveal>
               <p className="podcast__dek">Honest conversation. No softening the edges.</p>
@@ -665,8 +673,8 @@ function App() {
               </article>
               <article className="offer-row" data-reveal>
                 <span className="offer-row__number">04</span>
-                <h3>Tender &amp; RFQ compliance</h3>
-                <p>Consulting support for businesses preparing clear, compliant tender and RFQ submissions.</p>
+                <h3>Neema Tradings — tender &amp; RFQ compliance</h3>
+                <p>CSD registration, company registration, beneficial ownership, annual returns and tender training. neematradings.co.za</p>
               </article>
             </div>
           </div>
