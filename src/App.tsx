@@ -439,14 +439,12 @@ function App() {
                   Credentials come first.
                 </h2>
               </div>
-              <p className="section-intro__copy">
-                Her public profile is grounded in education, business ownership and a seat at the table earned through preparation.
-              </p>
-              <img
-                src={graduation}
-                alt="Nomthandazo Nkosi at her graduation"
-                style={{ marginTop: "1.5rem", width: "100%", maxWidth: 280, borderRadius: 4 }}
-              />
+              <div className="credentials-portrait-row">
+                <img src={graduation} alt="Nomthandazo Nkosi at her graduation" className="credentials-portrait" />
+                <p className="section-intro__copy">
+                  Her public profile is grounded in education, business ownership and a seat at the table earned through preparation.
+                </p>
+              </div>
             </div>
 
             <div className="credential-list">
@@ -497,11 +495,12 @@ function App() {
                   <ArrowIcon diagonal />
                 </div>
                 <div className="reach-platform__number">
-                  <strong>492K</strong>
+                  <strong data-count="492" data-suffix="K">0K</strong>
                   <span>followers</span>
                 </div>
                 <p className="reach-platform__secondary">
-                  17.2M <span className="reach-platform__unit">likes</span>
+                  <span data-count="17.2" data-decimals="1" data-suffix="M">0M</span>{" "}
+                  <span className="reach-platform__unit">likes</span>
                 </p>
                 <span className="reach-platform__handle">@nomie_nkosi</span>
               </a>
@@ -519,70 +518,12 @@ function App() {
                   <ArrowIcon diagonal />
                 </div>
                 <div className="reach-platform__number">
-                  <strong>26.5K</strong>
+                  <strong data-count="26.5" data-decimals="1" data-suffix="K">0K</strong>
                   <span>followers</span>
                 </div>
                 <p className="reach-platform__secondary reach-platform__secondary--quiet">A close-knit community</p>
                 <span className="reach-platform__handle">@nomieland.nkosi</span>
               </a>
-            </div>
-          </div>
-        </section>
-
-        <section className="section-space" id="live" aria-labelledby="live-title">
-          <div className="section-inner">
-            <div className="section-intro" data-reveal>
-              <div>
-                <p className="section-kicker">Live</p>
-                <h2 className="section-title" id="live-title">
-                  Straight from the source.
-                </h2>
-              </div>
-              <p className="section-intro__copy">
-                Pulled live from her official TikTok and Instagram — always current, no screenshots needed.
-              </p>
-            </div>
-            <div
-              style={{
-                display: "grid",
-                gap: "2rem",
-                gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-                alignItems: "start",
-              }}
-            >
-              <blockquote
-                className="tiktok-embed"
-                cite="https://www.tiktok.com/@nomie_nkosi"
-                data-unique-id="nomie_nkosi"
-                data-embed-type="creator"
-                style={{ maxWidth: 420, minWidth: 288, margin: "0 auto" }}
-              >
-                <section>
-                  <a target="_blank" rel="noopener noreferrer" href="https://www.tiktok.com/@nomie_nkosi">
-                    @nomie_nkosi on TikTok
-                  </a>
-                </section>
-              </blockquote>
-              <blockquote
-                className="instagram-media"
-                data-instgrm-permalink="https://www.instagram.com/nomieland.nkosi/p/DcIvzyqDfpU/"
-                data-instgrm-version="14"
-                style={{ margin: "0 auto", maxWidth: 420, minWidth: 288 }}
-              >
-                <a href="https://www.instagram.com/nomieland.nkosi/p/DcIvzyqDfpU/" target="_blank" rel="noreferrer">
-                  View on Instagram
-                </a>
-              </blockquote>
-              <blockquote
-                className="instagram-media"
-                data-instgrm-permalink="https://www.instagram.com/nomieland.nkosi/p/DYJ8dczDV0P/"
-                data-instgrm-version="14"
-                style={{ margin: "0 auto", maxWidth: 420, minWidth: 288 }}
-              >
-                <a href="https://www.instagram.com/nomieland.nkosi/p/DYJ8dczDV0P/" target="_blank" rel="noreferrer">
-                  View on Instagram
-                </a>
-              </blockquote>
             </div>
           </div>
         </section>
