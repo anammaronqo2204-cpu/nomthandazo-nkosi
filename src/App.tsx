@@ -541,22 +541,51 @@ function App() {
                 </h2>
               </div>
               <p className="section-intro__copy">
-                Pulled live from her official TikTok — always current, no screenshots needed.
+                Pulled live from her official TikTok and Instagram — always current, no screenshots needed.
               </p>
             </div>
-            <blockquote
-              className="tiktok-embed"
-              cite="https://www.tiktok.com/@nomie_nkosi"
-              data-unique-id="nomie_nkosi"
-              data-embed-type="creator"
-              style={{ maxWidth: 420, minWidth: 288, margin: "0 auto" }}
+            <div
+              style={{
+                display: "grid",
+                gap: "2rem",
+                gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+                alignItems: "start",
+              }}
             >
-              <section>
-                <a target="_blank" rel="noopener noreferrer" href="https://www.tiktok.com/@nomie_nkosi">
-                  @nomie_nkosi on TikTok
+              <blockquote
+                className="tiktok-embed"
+                cite="https://www.tiktok.com/@nomie_nkosi"
+                data-unique-id="nomie_nkosi"
+                data-embed-type="creator"
+                style={{ maxWidth: 420, minWidth: 288, margin: "0 auto" }}
+              >
+                <section>
+                  <a target="_blank" rel="noopener noreferrer" href="https://www.tiktok.com/@nomie_nkosi">
+                    @nomie_nkosi on TikTok
+                  </a>
+                </section>
+              </blockquote>
+              <blockquote
+                className="instagram-media"
+                data-instgrm-permalink="https://www.instagram.com/nomieland.nkosi/p/DcIvzyqDfpU/"
+                data-instgrm-version="14"
+                style={{ margin: "0 auto", maxWidth: 420, minWidth: 288 }}
+              >
+                <a href="https://www.instagram.com/nomieland.nkosi/p/DcIvzyqDfpU/" target="_blank" rel="noreferrer">
+                  View on Instagram
                 </a>
-              </section>
-            </blockquote>
+              </blockquote>
+              <blockquote
+                className="instagram-media"
+                data-instgrm-permalink="https://www.instagram.com/nomieland.nkosi/p/DYJ8dczDV0P/"
+                data-instgrm-version="14"
+                style={{ margin: "0 auto", maxWidth: 420, minWidth: 288 }}
+              >
+                <a href="https://www.instagram.com/nomieland.nkosi/p/DYJ8dczDV0P/" target="_blank" rel="noreferrer">
+                  View on Instagram
+                </a>
+              </blockquote>
+            </div>
           </div>
         </section>
 
